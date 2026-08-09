@@ -135,7 +135,8 @@ MAILERS = {
 }
 
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:5173",  # port par défaut de Vue/Vite
+    "http://localhost:5173",
+    "https://ironyx01.github.io",
 ]
 
 REST_FRAMEWORK = {
