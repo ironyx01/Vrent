@@ -13,7 +13,7 @@ class LocataireSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Locataire
-        fields = ['id', 'bien', 'nom', 'date_entree', 'paiements']
+        fields = ['id', 'bien', 'nom', 'date_entree', 'email', 'telephone', 'garant_nom', 'garant_email', 'garant_telephone', 'paiements']
 
 
 class BienSerializer(serializers.ModelSerializer):

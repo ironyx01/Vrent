@@ -18,6 +18,11 @@ class Locataire(models.Model):
     bien = models.ForeignKey(Bien, on_delete=models.CASCADE, related_name='locataires')
     nom = models.CharField(max_length=100)
     date_entree = models.DateField()
+    email = models.EmailField(blank=True)
+    telephone = models.CharField(max_length=20, blank=True)
+    garant_nom = models.CharField(max_length=100, blank=True)
+    garant_email = models.EmailField(blank=True)
+    garant_telephone = models.CharField(max_length=20, blank=True)
 
     def __str__(self):
         return self.nom
